@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE8094F0191AADB0001A3F3C /* LLArtistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8094EF191AADB0001A3F3C /* LLArtistViewController.m */; };
 		FE9ED61C191A95F900640EBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9ED61B191A95F900640EBF /* Foundation.framework */; };
 		FE9ED61E191A95F900640EBF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9ED61D191A95F900640EBF /* CoreGraphics.framework */; };
 		FE9ED620191A95F900640EBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9ED61F191A95F900640EBF /* UIKit.framework */; };
@@ -21,6 +22,10 @@
 		FE9ED63D191A95F900640EBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE9ED61F191A95F900640EBF /* UIKit.framework */; };
 		FE9ED645191A95F900640EBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE9ED643191A95F900640EBF /* InfoPlist.strings */; };
 		FE9ED647191A95F900640EBF /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9ED646191A95F900640EBF /* CoreDataTests.m */; };
+		FE9ED652191A961A00640EBF /* LLAppDelegate+CoreDataContext.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9ED651191A961A00640EBF /* LLAppDelegate+CoreDataContext.m */; };
+		FE9ED655191A9B8500640EBF /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE9ED653191A9B8500640EBF /* Model.xcdatamodeld */; };
+		FE9ED658191A9DD900640EBF /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9ED657191A9DD900640EBF /* Label.m */; };
+		FE9ED65B191A9DD900640EBF /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9ED65A191A9DD900640EBF /* Artist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE8094EE191AADB0001A3F3C /* LLArtistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLArtistViewController.h; sourceTree = "<group>"; };
+		FE8094EF191AADB0001A3F3C /* LLArtistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLArtistViewController.m; sourceTree = "<group>"; };
 		FE9ED618191A95F900640EBF /* CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9ED61B191A95F900640EBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE9ED61D191A95F900640EBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +60,13 @@
 		FE9ED642191A95F900640EBF /* CoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoreDataTests-Info.plist"; sourceTree = "<group>"; };
 		FE9ED644191A95F900640EBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE9ED646191A95F900640EBF /* CoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
+		FE9ED650191A961A00640EBF /* LLAppDelegate+CoreDataContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LLAppDelegate+CoreDataContext.h"; path = "../LLAppDelegate+CoreDataContext.h"; sourceTree = "<group>"; };
+		FE9ED651191A961A00640EBF /* LLAppDelegate+CoreDataContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LLAppDelegate+CoreDataContext.m"; path = "../LLAppDelegate+CoreDataContext.m"; sourceTree = "<group>"; };
+		FE9ED654191A9B8500640EBF /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FE9ED656191A9DD900640EBF /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		FE9ED657191A9DD900640EBF /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		FE9ED659191A9DD900640EBF /* Artist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
+		FE9ED65A191A9DD900640EBF /* Artist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +128,18 @@
 			children = (
 				FE9ED62A191A95F900640EBF /* LLAppDelegate.h */,
 				FE9ED62B191A95F900640EBF /* LLAppDelegate.m */,
+				FE9ED650191A961A00640EBF /* LLAppDelegate+CoreDataContext.h */,
+				FE9ED651191A961A00640EBF /* LLAppDelegate+CoreDataContext.m */,
+				FE9ED653191A9B8500640EBF /* Model.xcdatamodeld */,
+				FE9ED659191A9DD900640EBF /* Artist.h */,
+				FE9ED65A191A9DD900640EBF /* Artist.m */,
+				FE9ED656191A9DD900640EBF /* Label.h */,
+				FE9ED657191A9DD900640EBF /* Label.m */,
 				FE9ED62D191A95F900640EBF /* Main.storyboard */,
 				FE9ED630191A95F900640EBF /* LLViewController.h */,
 				FE9ED631191A95F900640EBF /* LLViewController.m */,
+				FE8094EE191AADB0001A3F3C /* LLArtistViewController.h */,
+				FE8094EF191AADB0001A3F3C /* LLArtistViewController.m */,
 				FE9ED633191A95F900640EBF /* Images.xcassets */,
 				FE9ED622191A95F900640EBF /* Supporting Files */,
 			);
@@ -250,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9ED658191A9DD900640EBF /* Label.m in Sources */,
+				FE8094F0191AADB0001A3F3C /* LLArtistViewController.m in Sources */,
 				FE9ED62C191A95F900640EBF /* LLAppDelegate.m in Sources */,
+				FE9ED652191A961A00640EBF /* LLAppDelegate+CoreDataContext.m in Sources */,
+				FE9ED655191A9B8500640EBF /* Model.xcdatamodeld in Sources */,
 				FE9ED628191A95F900640EBF /* main.m in Sources */,
 				FE9ED632191A95F900640EBF /* LLViewController.m in Sources */,
+				FE9ED65B191A9DD900640EBF /* Artist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +485,7 @@
 				FE9ED64C191A95F900640EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE9ED64D191A95F900640EBF /* Build configuration list for PBXNativeTarget "CoreDataTests" */ = {
 			isa = XCConfigurationList;
@@ -465,8 +494,22 @@
 				FE9ED64F191A95F900640EBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE9ED653191A9B8500640EBF /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE9ED654191A9B8500640EBF /* Model.xcdatamodel */,
+			);
+			currentVersion = FE9ED654191A9B8500640EBF /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE9ED610191A95F900640EBF /* Project object */;
 }
