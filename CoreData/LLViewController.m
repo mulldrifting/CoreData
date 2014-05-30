@@ -97,7 +97,7 @@
 }
 
 
-#pragma  mark - Table View Methods
+#pragma mark - Table View Methods
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
